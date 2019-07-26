@@ -1,0 +1,103 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* reset ================================ */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #ff69b4;
+  color: #2d3133;
+}
+ul,li{
+  list-style-type: none;
+}
+.main{
+  width:100%;
+  position: absolute;
+  top:90px;
+}
+
+.container{
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+header{
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.header-logo{
+  float: left;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-menus{
+  float: right;
+  padding-right: 20px;
+}
+.header-menus li{
+  float: left;
+  padding-left: 15px
+}
+/*=======top*=======*/
+
+.top-main{
+  background-image: url(/oo.jpg);
+  height: auto;
+  padding: 300px 0 360px;
+  background-size: cover;
+  background-position: center 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.top-message {
+  width:100%;
+  color: white;
+}
+
+ .top-message h2{
+  font-size: 70px;
+  letter-spacing: 15px;
+}
+.top-message p{
+  font-size: 40px;
+}
+
+/*========about*=========*/
+.about-main{
+  padding: 140px 20% 0;
+  color: white;
+}
+
+.about-main h2{
+  font-size: 70px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.flash{
+  width:100%;
+  text-align: center;
+  z-index: 10;
+  color:white;
+  background-color: #ffd700;
+  position: absolute;
+  top:90px;
+
+}

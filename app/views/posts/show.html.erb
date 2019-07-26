@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="container">
+      <img src="<%= "/user_images/#{@user.image_name}" %>" >
+      <%= link_to(@user.name,"/users/#{@user.id}") %>
+      <p>
+      <%= @post.content %>
+      </p>
+      <%= @post.created_at %>
+      <% if @current_user.id== @post.user_id%>
+      <%=link_to("編集","/posts/#{@post.id}/edit")%>
+      <%=link_to("削除","/posts/#{@post.id}/destroy", {method: "post"}) %>
+      <% end %>
+  </div>
+</div>
